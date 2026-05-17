@@ -1,0 +1,15 @@
+replicaCount: 4
+
+image:
+  repository: nirmaltechlover/maven-java-app
+  tag: "BUILD_ID"
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 8080
+  targetPort: 8080
+
+containerPort: 8080
+
+resources: {}
